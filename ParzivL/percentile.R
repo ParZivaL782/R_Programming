@@ -1,0 +1,5 @@
+data=read.csv("C:\\Users\\autblt411\\Documents\\R_Programming-main\\US101Sample.csv",header=TRUE)
+print(data)
+y=seq(0.05,1,by=0.05)
+x=quantile(data$LongVel,y)
+plot(x,y)
